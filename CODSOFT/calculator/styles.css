@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font-family */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator container styles */
+.calculator {
+    background-color: #444;
+    border: 1px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 7%;
+}
+
+/* Input box styles */
+input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 28px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 8px;
+    text-align: right;
+}
+
+/* Button styles */
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #888;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Equal button style */
+.equalBtn {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Operator button style */
+.operator {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Number button style */
+.button:not(.operator):not(.equalBtn) {
+    background-color: #444;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #666;
+    color: #fff;
+}
